@@ -107,7 +107,7 @@ def run_experiment(c_miss_weight, c_action_weight, c_com_weight, early_type):
     best_threshold_alarm2 = 0.0
     best_cost = 99999999999999.9
 
-    for threshold_alarm1 in range(50,101):
+    for threshold_alarm1 in range(1,101):
         for threshold_alarm2 in range(threshold_alarm1-1,101):
             conf_thresholds[0] = threshold_alarm2 * 0.01
             conf_thresholds[1] = threshold_alarm1 * 0.01
